@@ -1,6 +1,6 @@
 package Using_Generics;
 
-public class Maximum {
+public class Maximum { // by using Generic method
 
 	public static <E extends Comparable> E getmaximum(E value1, E value2, E value3) {
 		E max = value1;
