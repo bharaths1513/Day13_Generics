@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MaximumTest {
+	// To Test the Maximum Integer between three values
 	@Test
 	public void intmax1() {
 		Integer actualValue = Maximum.getmaximuminteger(90, 42, 10);
@@ -16,6 +17,7 @@ public class MaximumTest {
 		Assert.assertEquals(70, actualValue, 0);
 	}
 
+	// To Test the Maximum Float value between three values
 	@Test
 	public void floatMax1() {
 		Float actualValue = Maximum.getmaximumfloat(12f, 14f, 15f);
@@ -26,5 +28,18 @@ public class MaximumTest {
 	public void floatMax2() {
 		Float actualValue = Maximum.getmaximumfloat(1000f, 545f, 746f);
 		Assert.assertEquals(1000, actualValue, 0);
+	}
+
+	// To Test the Maximum String between three values
+	@Test
+	public void stringmax1() {
+		String actualValue = Maximum.getmaximumstring("Apple", "Peach", "Banana");
+		Assert.assertEquals("Peach", actualValue);
+	}
+
+	@Test
+	public void stringmax2() {
+		String actualValue = Maximum.getmaximumstring("Avinash", "Anusha", "Bharath");
+		Assert.assertEquals("Bharath", actualValue);
 	}
 }
