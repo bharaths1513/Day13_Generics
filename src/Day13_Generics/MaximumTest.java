@@ -6,13 +6,13 @@ import org.junit.Test;
 public class MaximumTest {
 	@Test
 	public void intMax1() {
-		int actualValue = Maximum.getmaximum(12, 14, 15);
-		Assert.assertEquals(15, actualValue);
+		Float actualValue = Maximum.getmaximum(12f, 14f, 15f);
+		Assert.assertEquals(15, actualValue, 0);
 	}
 
 	@Test
 	public void intMax2() {
-		int actualValue = Maximum.getmaximum(1000, 545, 746);
-		Assert.assertEquals(1000, actualValue);
+		Float actualValue = Maximum.getmaximum(1000f, 545f, 746f);
+		Assert.assertEquals(1000, actualValue, 0);
 	}
 }
