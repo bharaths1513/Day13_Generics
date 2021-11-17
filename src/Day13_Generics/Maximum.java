@@ -35,4 +35,15 @@ public class Maximum {
 		return max;
 	}
 
+	// compareTo Method overriding
+
+	public static void maxstring() {
+		compare o = new compare();
+		o.compare("abc", "abcd", "abcde");
+
+	}
+
+	public static void main(String[] args) {
+		Maximum.maxstring();
+	}
 }

@@ -39,7 +39,7 @@ public class MaximumTest {
 
 	@Test
 	public void stringmax2() {
-		String actualValue = Maximum.getmaximumstring("Avinash", "Anusha", "Bharath");
+		String actualValue = Maximum.getmaximumstring("Avinash", "Rakesh", "Bharath");
 		Assert.assertEquals("Bharath", actualValue);
 	}
 }
